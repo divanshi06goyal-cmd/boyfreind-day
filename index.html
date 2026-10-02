@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nikhil ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #120000;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#passwordScreen {
+    background: radial-gradient(circle, #700000, #120000);
+}
+
+.heart {
+    font-size: 75px;
+    animation: beat 1.2s infinite;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+input {
+    margin-top: 25px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid #ff4d4d;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    margin-top: 18px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #e60000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #e60000;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#error {
+    color: #ff7777;
+    margin-top: 15px;
+    display: none;
+}
+
+#website {
+    display: none;
+}
+
+section {
+    padding: 70px 20px;
+}
+
+.card {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 30px;
+    background: rgba(120,0,0,0.35);
+    border: 1px solid rgba(255,80,80,0.4);
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(255,0,0,0.15);
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.photos img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #8b0000;
+}
+
+.reason {
+    display: inline-block;
+    width: 260px;
+    margin: 10px;
+    padding: 25px;
+    background: #260000;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 40px 20px;
+}
+
+@keyframes beat {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    animation: float 6s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="passwordScreen" class="screen">
+
+```
+<div class="heart">❤️</div>
+
+<h1>Hey Nikhil...</h1>
+
+<p>
+    Divv made something especially for you. 🥹
+    <br>
+    But first... you need the secret code.
+</p>
+
+<input
+    type="password"
+    id="password"
+    placeholder="Enter the secret code"
+>
+
+<button onclick="unlock()">Open My Surprise 💌</button>
+
+<p id="error">Hmm... that's not it ❤️</p>
+```
+
+</div>
+
+<!-- ACTUAL WEBSITE -->
+
+<div id="website">
+
+<section>
+
+```
+<div class="heart">❤️</div>
+
+<h1>Happy Boyfriend's Day, Nikhil!</h1>
+
+<p>
+    A little corner of the internet made
+    especially for you by Divv. ❤️
+</p>
+
+<button onclick="playMusic()">🎵 Play Our Music</button>
+
+<audio id="music" loop>
+    <!-- Add your music file here later -->
+</audio>
+```
+
+</section>
+
+<section>
+
+```
+<h2>💌 A Little Message For You</h2>
+
+<div class="card">
+
+    <p>
+        Nikhil, I wanted to make something a little
+        different for you this Boyfriend's Day.
+        <br><br>
+
+        This website is just a tiny way of saying
+        that you are someone really special to me.
+        <br><br>
+
+        Thank you for the laughs, the conversations,
+        the memories and all the little moments that
+        make everything feel a little more special.
+        <br><br>
+
+        I hope this makes you smile even for a moment.
+        ❤️
+        <br><br>
+
+        — Divv
+    </p>
+
+</div>
+```
+
+</section>
+
+<section>
+
+```
+<h2>📸 Our Little Memories</h2>
+
+<p>Some of my favourite moments with you ❤️</p>
+
+<div class="photos">
+
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+
+</div>
+```
+
+</section>
+
+<section>
+
+```
+<h2>❤️ Reasons You're Special</h2>
+
+<div class="reason">
+    <h3>01</h3>
+    <p>Your smile can make my day better.</p>
+</div>
+
+<div class="reason">
+    <h3>02</h3>
+    <p>You make ordinary moments memorable.</p>
+</div>
+
+<div class="reason">
+    <h3>03</h3>
+    <p>You are simply someone I treasure.</p>
+</div>
+```
+
+</section>
+
+<section>
+
+```
+<h2>🥹 One Last Thing...</h2>
+
+<div class="card">
+
+    <p>
+        No matter how many memories we make,
+        I hope there are always more waiting for us.
+        <br><br>
+
+        Happy Boyfriend's Day, Nikhil. ❤️
+        <br><br>
+
+        With love,
+        <br>
+        <strong>Divv ❤️</strong>
+    </p>
+
+</div>
+```
+
+</section>
+
+<footer>
+    Made with ❤️ by Divv, especially for Nikhil.
+</footer>
+
+</div>
+
+<script>
+
+function unlock() {
+
+    const password = document.getElementById("password").value;
+
+    if (password === "29/07/2026") {
+
+        document.getElementById("passwordScreen").style.display = "none";
+        document.getElementById("website").style.display = "block";
+
+    } else {
+
+        document.getElementById("error").style.display = "block";
+
+    }
+}
+
+
+function playMusic() {
+
+    const music = document.getElementById("music");
+
+    if (music.src) {
+        music.play();
+    } else {
+        alert("Add your music file to the website first ❤️");
+    }
+}
+
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+</html>
